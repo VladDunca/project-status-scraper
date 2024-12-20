@@ -25,12 +25,6 @@ public class WebDriverConfig {
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-popup-blocking");
 
-        // Set binary location for Heroku
-        String binaryPath = System.getenv("GOOGLE_CHROME_BIN");
-        if (binaryPath != null) {
-            options.setBinary(binaryPath);
-        }
-
         return options;
     }
 
