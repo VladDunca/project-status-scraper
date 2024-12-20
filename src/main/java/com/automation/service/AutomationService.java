@@ -52,7 +52,7 @@ public class AutomationService {
 
             // Locate the dropdown container
             logger.info("Waiting for the dropdown container to appear...");
-            WebElement dropdownContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#bml-page-content > div.bmc-layout-profile > div.bml-content > div.tab-content > div > div > div:nth-child(3) > div.col-12.col-xl-5 > div:nth-child(1) > div.bmc-layout-profile-section-content.bm-visible > div:nth-child(1) > div:nth-child(1) > div > div.bmc-field-select.required.bm-has-value.bm-focus")));
+            WebElement dropdownContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#bml-page-content > div.bmc-layout-profile > div.bml-content > div.tab-content > div > div > div:nth-child(3) > div.col-12.col-xl-5 > div:nth-child(1) > div.bmc-layout-profile-section-content.bm-visible > div:nth-child(1) > div:nth-child(1) > div")));
 
             // Hover over the dropdown container
             logger.info("Hovering over the dropdown container...");
